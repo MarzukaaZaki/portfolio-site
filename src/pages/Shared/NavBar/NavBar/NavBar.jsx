@@ -1,9 +1,9 @@
-import { AcUnitRounded } from '@mui/icons-material';
-import { AppBar, Grid, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { AcUnitRounded, DarkModeOutlined } from '@mui/icons-material';
+import { AppBar, Box, Button, Grid, IconButton, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React, { useState } from 'react';
 import NavBarDrawer from '../NavBarDrawer/NavBarDrawer';
 
-const NavBar = ({links}) => {
+const NavBar = ({ links }) => {
     const [value, setValue] = useState();
     const theme = useTheme();
     console.log(theme);
@@ -12,13 +12,13 @@ const NavBar = ({links}) => {
     return (
         <AppBar color='transparent'>
             <Toolbar>
-            {
-                isMatch ? 
-                <>
-                <NavBarDrawer links={links}></NavBarDrawer>
-                </>:
-                <>
-                <Grid container justifyItems="flex-end">
+                {
+                    isMatch ?
+                        <>
+                            <NavBarDrawer links={links}></NavBarDrawer>
+                        </> :
+                        <>
+                            <Grid container justifyItems="flex-end">
                                 <Grid item xs={2}>
                                     <div className='flex'>
                                         <Typography>
@@ -47,16 +47,23 @@ const NavBar = ({links}) => {
                                         {
                                             links.map((link, index) => <Tab key={index} label={link}></Tab>)
                                         }
-                                        
+                                      </Tabs>
+                                    
 
-                                    </Tabs>
 
                                 </Grid>
+                                
+
+                                      <Grid xs={2}>
+                                        <Box className='-ms-8 mt-1'>
+                                            <IconButton><DarkModeOutlined/></IconButton>
+                                        </Box>
+                                      </Grid>
 
                             </Grid>
-                
-                </>
-            }
+
+                        </>
+                }
             </Toolbar>
         </AppBar>
     );

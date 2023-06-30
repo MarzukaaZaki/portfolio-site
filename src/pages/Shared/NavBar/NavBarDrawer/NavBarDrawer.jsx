@@ -1,7 +1,7 @@
 import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText, useTheme } from '@mui/material';
 import React, { useState } from 'react';
 import DragHandleRoundedIcon from '@mui/icons-material/DragHandleRounded';
-import { CloseRounded } from '@mui/icons-material';
+import { CloseRounded, DarkModeOutlined } from '@mui/icons-material';
 
 
 const NavBarDrawer = ({ links }) => {
@@ -39,15 +39,22 @@ const NavBarDrawer = ({ links }) => {
 
 
                     }
+                    
                 </List>
 
             </Drawer>
 
             {/* Icon button defines functionalities of an icon */}
             <IconButton sx={{ marginLeft: 'auto', color: 'black' }} onClick={() => setOpen(!open)}>
-                {open ?
-                    <CloseRounded /> :
-                    <DragHandleRoundedIcon />}
+                {
+                    open ?
+                        <CloseRounded /> :
+                        <DragHandleRoundedIcon />
+                }
+                
+            </IconButton>
+            <IconButton>
+                <DarkModeOutlined/>
             </IconButton>
 
         </>
