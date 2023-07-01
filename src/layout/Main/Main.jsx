@@ -3,6 +3,7 @@ import NavBar from '../../pages/Shared/NavBar/NavBar/NavBar';
 import Intro from '../../pages/Home/Intro/Intro';
 import { Button, Grid } from '@mui/material';
 import ActionButton from '../../components/ActionButton/ActionButton';
+import DownloadResumeButton from '../../components/DownloadResumeButton/DownloadResumeButton';
 
 
 const Main = () => {
@@ -22,8 +23,8 @@ const Main = () => {
                     <Intro/>
 
                 </Grid>
-                <Grid item sx={{display:'flex'}}>
-                    <ActionButton/>
+                <Grid item>
+                    <DownloadResumeButton/>
                     
                 </Grid>
 

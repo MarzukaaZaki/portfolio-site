@@ -1,11 +1,11 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const ActionButton = () => {
+const ActionButton = ({children, ...rest}) => {
     return (
-        <div>
-            <Button> Download Resume</Button>
-        </div>
+
+        <Button {...rest} sx={{ backgroundColor: '#F05454', color: 'white', borderRadius: '15px', padding: '18px 26px' }}> {children}</Button>
+
     );
 };
 

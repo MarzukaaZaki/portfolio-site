@@ -1,9 +1,11 @@
 import React from 'react';
+import ActionButton from '../ActionButton/ActionButton';
+
 
 
 const DownloadResumeButton = () => {
   const handleDownload = () => {
-    fetch('/Cover Letter of Marzuka Zaki Abeeda.pdf')
+    fetch('/Resume of Marzuka Zaki Abeeda.pdf')
       .then(response => response.blob())
       .then(blob => {
         // Create a temporary URL for the downloaded file
@@ -26,7 +28,8 @@ const DownloadResumeButton = () => {
   };
 
   return (
-    <button className='btn' onClick={handleDownload}>Download Resume</button>
+    <ActionButton onClick={handleDownload}>Download Resume</ActionButton>
+    
   );
 };
 
