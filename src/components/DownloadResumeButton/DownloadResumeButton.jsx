@@ -26,7 +26,7 @@ const DownloadResumeButton = () => {
   };
 
   return (
-    <button className='' onClick={handleDownload}>Download Resume</button>
+    <button className='btn' onClick={handleDownload}>Download Resume</button>
   );
 };
 

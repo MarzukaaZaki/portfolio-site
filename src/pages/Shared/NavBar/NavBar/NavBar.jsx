@@ -10,7 +10,7 @@ const NavBar = ({ links }) => {
 
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <AppBar color='transparent'>
+        <AppBar sx={{backgroundColor: '#121212', color: '#F5F5F5'}}>
             <Toolbar>
                 {
                     isMatch ?
@@ -21,10 +21,8 @@ const NavBar = ({ links }) => {
                             <Grid container justifyItems="flex-end">
                                 <Grid item xs={2}>
                                     <div className='flex'>
-                                        <Typography>
-                                            <AcUnitRounded className='me-4'></AcUnitRounded>
-                                        </Typography>
-                                        marzuka
+                                        
+                                        Marzuka Zaki 
                                     </div>
 
 
@@ -39,7 +37,7 @@ const NavBar = ({ links }) => {
                                     <Tabs value={value} textColor='inherit'
                                         TabIndicatorProps={{
                                             sx: {
-                                                backgroundColor: "black",
+                                                backgroundColor: "#F5F5F5",
                                                 height: 3,
                                             }
                                         }}

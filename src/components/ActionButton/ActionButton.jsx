@@ -4,7 +4,7 @@ import React from 'react';
 const ActionButton = () => {
     return (
         <div>
-            <Button></Button>
+            <Button> Download Resume</Button>
         </div>
     );
 };
