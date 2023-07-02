@@ -4,6 +4,7 @@ import Intro from '../../pages/Home/Intro/Intro';
 import { Button, Grid } from '@mui/material';
 import ActionButton from '../../components/ActionButton/ActionButton';
 import DownloadResumeButton from '../../components/DownloadResumeButton/DownloadResumeButton';
+import Projects from '../../pages/Home/Projects/Projects';
 
 
 const Main = () => {
@@ -17,15 +18,18 @@ const Main = () => {
                 justifyContent="center"
                 alignItems="center"
                 style={{ minHeight: '80vh' }}
-                spacing={2}
+                spacing={5}
             >
-                <Grid item>
+                <Grid item style={{marginTop:'20%'}}>
                     <Intro/>
 
                 </Grid>
                 <Grid item>
                     <DownloadResumeButton/>
                     
+                </Grid>
+                <Grid item style={{width:'80%'}}>
+                    <Projects/>
                 </Grid>
 
 
