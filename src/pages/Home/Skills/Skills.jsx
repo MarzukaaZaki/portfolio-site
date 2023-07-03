@@ -16,6 +16,7 @@ import mongodbImage from '../../../assets/mongodbLogo.jpg'
 import mysqlImage from '../../../assets/mysqlLogo.jpg'
 import bashImage from '../../../assets/bash.jpg'
 import adobeXdImage from '../../../assets/adobeXD.jpg'
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Skills = ({id}) => {
     const techImageStyle = {
@@ -23,7 +24,9 @@ const Skills = ({id}) => {
         height:'100px'
     }
     return (
+        <div className='px-8 py-10'><SectionTitle sectionHeading="Skills"/>
         <Grid id={id} container spacing={3}>
+            
             <Grid item xs={3.8} md={1.5}>
                 <img src={htmlImage} style={techImageStyle} />
 
@@ -90,6 +93,7 @@ const Skills = ({id}) => {
             </Grid>
 
         </Grid>
+        </div>
     );
 };
 

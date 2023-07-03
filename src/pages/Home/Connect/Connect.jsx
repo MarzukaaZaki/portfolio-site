@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { Box, TextField, TextareaAutosize } from '@mui/material';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Connect = ({id}) => {
     const form = useRef();
@@ -30,7 +31,7 @@ const Connect = ({id}) => {
     };
     return (
         <div className='flex-col items-center justify-center px-8 py-10 text-center' id={id}>
-            
+            <SectionTitle sectionHeading="Connect with Me"/>
             <Box
                 component="form"
                 sx={{

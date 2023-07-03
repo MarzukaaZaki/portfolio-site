@@ -8,6 +8,7 @@ import reactIcon from '../../../assets/react.png'
 import tailwindIcon from '../../../assets/tailwindcss.png'
 import expressIcon from '../../../assets/express.png'
 import { Link, useLoaderData } from 'react-router-dom';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 
 const Projects = ({id}) => {
@@ -38,7 +39,9 @@ const Projects = ({id}) => {
         color: '#FFF4E0'
     }
     return (
-
+        <div>
+            <SectionTitle sectionHeading="Portfolio"/>
+        
         <Grid id={id} container spacing={3}>
             {
                 isMatch ?
@@ -159,7 +162,7 @@ const Projects = ({id}) => {
                     </>
             }
         </Grid>
-
+    </div>
     );
 };
 
