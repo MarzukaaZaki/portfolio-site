@@ -29,13 +29,14 @@ const Connect = () => {
         },
     };
     return (
-        <div className='flex-col items-center justify-center px-8 py-10'>
+        <div className='flex-col items-center justify-center px-8 py-10 text-center'>
             
             <Box
                 component="form"
                 sx={{
 
-                    '& .MuiTextField-root': { m: 1, width: '25ch' },
+                    '& .MuiTextField-root': { m: 1 },
+                    marginLeft:'35px'
                 }}
                 noValidate
                 autoComplete="off"
@@ -78,7 +79,7 @@ const Connect = () => {
 
                 />
                 <br />
-                <input type='submit' value="Send" style={{padding:'10px 10px', backgroundColor:'gray'}}/>
+                <input type='submit' value="Send" style={{padding:'10px 10px', backgroundColor:'gray', borderRadius:'12px',width:'100%'}}/>
                 </Box>
         </div>
     );

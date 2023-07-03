@@ -6,10 +6,11 @@ import ActionButton from '../../components/ActionButton/ActionButton';
 import DownloadResumeButton from '../../components/DownloadResumeButton/DownloadResumeButton';
 import Projects from '../../pages/Home/Projects/Projects';
 import Connect from '../../pages/Home/Connect/Connect';
+import Skills from '../../pages/Home/Skills/Skills';
 
 
 const Main = () => {
-    const navBarLinks = ["About", "Skills", "Projects","Get in Touch"]
+    const navBarLinks = ["Skills", "Portfolio","Connect","Resume"]
     
     
     
@@ -31,6 +32,10 @@ const Main = () => {
                 <Grid item>
                     <DownloadResumeButton/>
                     
+                </Grid>
+                <Grid item style={{width:'90%'}}>
+                    <Skills/>
+
                 </Grid>
                 <Grid item style={{width:'85%'}}>
                     <Projects/>
