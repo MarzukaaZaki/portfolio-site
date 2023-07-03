@@ -26,7 +26,7 @@ const Main = () => {
                 spacing={5}
             >
                 <Grid item style={{marginTop:'20%'}}>
-                    <Intro/>
+                    <Intro />
 
                 </Grid>
                 <Grid item>
@@ -34,14 +34,14 @@ const Main = () => {
                     
                 </Grid>
                 <Grid item style={{width:'90%'}}>
-                    <Skills/>
+                    <Skills id='section1'/>
 
                 </Grid>
                 <Grid item style={{width:'85%'}}>
-                    <Projects/>
+                    <Projects  id='section2'/>
                 </Grid>
                 <Grid>
-                    <Connect/>
+                    <Connect  id='section3'/>
 
                 </Grid>
 

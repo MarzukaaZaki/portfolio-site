@@ -2,6 +2,7 @@ import { AcUnitRounded, DarkModeOutlined } from '@mui/icons-material';
 import { AppBar, Box, Button, Grid, IconButton, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React, { useState } from 'react';
 import NavBarDrawer from '../NavBarDrawer/NavBarDrawer';
+import { Link } from 'react-scroll';
 
 const NavBar = ({ links }) => {
     const [value, setValue] = useState();
@@ -43,7 +44,7 @@ const NavBar = ({ links }) => {
                                         }}
                                         onChange={(event, value) => setValue(value)}>
                                         {
-                                            links.map((link, index) => <Tab key={index} label={link}></Tab>)
+                                            links.map((link, index) =><Link key={index} to={`section${index + 1}`} smooth={true} duration={500}><Tab label={link}></Tab></Link> )
                                         }
                                       </Tabs>
                                     

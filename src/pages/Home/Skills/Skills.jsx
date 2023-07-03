@@ -17,13 +17,13 @@ import mysqlImage from '../../../assets/mysqlLogo.jpg'
 import bashImage from '../../../assets/bash.jpg'
 import adobeXdImage from '../../../assets/adobeXD.jpg'
 
-const Skills = () => {
+const Skills = ({id}) => {
     const techImageStyle = {
         width:'100px',
         height:'100px'
     }
     return (
-        <Grid container spacing={3}>
+        <Grid id={id} container spacing={3}>
             <Grid item xs={3.8} md={1.5}>
                 <img src={htmlImage} style={techImageStyle} />
 

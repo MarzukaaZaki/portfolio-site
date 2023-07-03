@@ -10,7 +10,7 @@ import expressIcon from '../../../assets/express.png'
 import { Link, useLoaderData } from 'react-router-dom';
 
 
-const Projects = () => {
+const Projects = ({id}) => {
 
 
     // Load Projects data from server
@@ -39,7 +39,7 @@ const Projects = () => {
     }
     return (
 
-        <Grid container spacing={3}>
+        <Grid id={id} container spacing={3}>
             {
                 isMatch ?
                     <>

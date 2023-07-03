@@ -5,7 +5,7 @@ const router = createBrowserRouter([
     {
         path:'/',
         element: <Main/>,
-        loader: ()=> fetch('http://localhost:5000/projects')
+        loader: ()=> fetch('https://my-portfolio-server-jade.vercel.app/projects')
     }
 ])
 

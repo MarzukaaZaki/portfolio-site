@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { Box, TextField, TextareaAutosize } from '@mui/material';
 
-const Connect = () => {
+const Connect = ({id}) => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -29,7 +29,7 @@ const Connect = () => {
         },
     };
     return (
-        <div className='flex-col items-center justify-center px-8 py-10 text-center'>
+        <div className='flex-col items-center justify-center px-8 py-10 text-center' id={id}>
             
             <Box
                 component="form"
