@@ -9,6 +9,9 @@ import Projects from '../../pages/Home/Projects/Projects';
 
 const Main = () => {
     const navBarLinks = ["About", "Skills", "Projects","Get in Touch"]
+    
+    
+    
     return (
         <div style={{ backgroundColor: '#121212' }}>
            <NavBar links={navBarLinks}></NavBar>
@@ -28,7 +31,7 @@ const Main = () => {
                     <DownloadResumeButton/>
                     
                 </Grid>
-                <Grid item style={{width:'80%'}}>
+                <Grid item style={{width:'80%'}} spacing={3}>
                     <Projects/>
                 </Grid>
 
