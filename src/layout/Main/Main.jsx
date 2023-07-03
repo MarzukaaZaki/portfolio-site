@@ -11,7 +11,7 @@ import { Slide, Zoom } from 'react-awesome-reveal';
 
 
 const Main = () => {
-    const navBarLinks = ["Skills", "Portfolio", "Connect", "Resume"]
+    const navBarLinks = ["About","Skills", "Portfolio", "Connect"]
 
 
 
@@ -28,7 +28,7 @@ const Main = () => {
             >
                 <Grid item style={{ marginTop: '20%' }}>
                     <Slide direction='down' duration={500}>
-                        <Intro />
+                        <Intro id='section1'/>
                     </Slide>
 
                 </Grid>
@@ -38,18 +38,18 @@ const Main = () => {
                 </Grid>
                 <Grid item style={{ width: '90%' }}>
                     <Slide direction='up' duration={500}>
-                        <Skills id='section1' />
+                        <Skills id='section2' />
                     </Slide>
 
                 </Grid>
                 <Grid item style={{ width: '85%' }}>
                     <Zoom direction='down' duration={850}>
-                        <Projects id='section2' />
+                        <Projects id='section3' />
                     </Zoom>
                 </Grid>
                 <Grid>
                     <Zoom direction='down' duration={850}>
-                        <Connect id='section3' />
+                        <Connect id='section4' />
                     </Zoom>
 
                 </Grid>

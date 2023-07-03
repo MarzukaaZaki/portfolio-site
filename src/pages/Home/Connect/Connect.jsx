@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { Box, TextField, TextareaAutosize } from '@mui/material';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 const Connect = ({id}) => {
     const form = useRef();
@@ -82,6 +83,8 @@ const Connect = ({id}) => {
                 <br />
                 <input type='submit' value="Send" style={{padding:'10px 10px', backgroundColor:'gray', borderRadius:'12px',width:'100%'}}/>
                 </Box>
+               
+               
         </div>
     );
 };

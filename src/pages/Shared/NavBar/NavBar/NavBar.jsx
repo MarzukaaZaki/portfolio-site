@@ -19,7 +19,7 @@ const NavBar = ({ links }) => {
                             <NavBarDrawer links={links}></NavBarDrawer>
                         </> :
                         <>
-                            <Grid container justifyItems="flex-end">
+                            <Grid container display="flex" justifyItems="flex-end">
                                 <Grid item xs={2}>
                                     <div className='flex'>
                                         
@@ -35,7 +35,7 @@ const NavBar = ({ links }) => {
 
                                 {/* Divided screen size (from xs to xl) into 6 columns so that the last tab doesn't slide and cover the first one.  */}
                                 <Grid item xs={9} >
-                                    <Tabs value={value} textColor='inherit'
+                                    <Tabs value={value} 
                                         TabIndicatorProps={{
                                             sx: {
                                                 backgroundColor: "#F5F5F5",
@@ -43,10 +43,15 @@ const NavBar = ({ links }) => {
                                             }
                                         }}
                                         onChange={(event, value) => setValue(value)}>
+                                            
                                         {
-                                            links.map((link, index) =><Link key={index} to={`section${index + 1}`} smooth={true} duration={500}><Tab label={link}></Tab></Link> )
+                                            links.map((link, index) =>
+                                            <Link key={index} to={`section${index + 1}`} smooth={true} duration={500}><Tab label={link}></Tab></Link>)
+                                            
                                         }
+                                        
                                       </Tabs>
+                                     
                                     
 
 
@@ -54,8 +59,8 @@ const NavBar = ({ links }) => {
                                 
 
                                       <Grid xs={2}>
-                                        <Box className='-ms-8 mt-1'>
-                                            <IconButton><DarkModeOutlined/></IconButton>
+                                        <Box className='mt-1 -ml-10'>
+                                            <Button sx={{color:'#F5F5F5', fontSize:'13px'}}><a href="https://drive.google.com/file/d/1PYzj4fIpSth1z6K2B4awjqAKe30TRuI0/view?usp=drive_link" target='_blank'>Resume</a></Button>
                                         </Box>
                                       </Grid>
 
