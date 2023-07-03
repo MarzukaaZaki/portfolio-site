@@ -102,7 +102,7 @@ const Projects = () => {
                                             component="img"
                                             style={{ width: '600px', height: '400px', padding: '20px 15px', borderRadius: '28px' }}
                                             image={project.websiteImages[0]}
-                                            alt="Live from space album cover"
+                                            alt={project.name}
                                         />
                                         <Box sx={{ display: 'flex', flexDirection: 'column', padding: '2px 10px', width: '70%' }}>
                                             <CardContent sx={{ flex: '1 0 auto', color: '#FFF4E0' }}>
@@ -113,13 +113,7 @@ const Projects = () => {
                                                     <Link to={project.liveSiteLink}><FiExternalLink style={iconStyles} /></Link>
                                                     <FiGithub style={iconStyles} className='ml-4' />
                                                     <ButtonGroup variant="text" aria-label="text button group" sx={{
-                                                        fontSize: '7px', height: '15px', marginTop: '10px',
-                                                        '& .MuiButtonGroup-grouped:not(:last-child)': {
-                                                            borderRightColor: '#FFF4E0', // Change the color to your desired color
-                                                            borderRightWidth: '1.2px',
-                                                            borderRightStyle: 'solid',
-                                                        },
-                                                    }}>
+                                                        fontSize: '7px', height: '15px'}}>
                                                         <Link to={project?.clientSideLink}><Button style={linkButtonStyle}>Client</Button></Link>
 
                                                         {
@@ -135,7 +129,7 @@ const Projects = () => {
 
 
                                                 </Box>
-                                                <Typography component="div" variant="h3">
+                                                <Typography component="div" variant="h4">
                                                     {project.name}
                                                 </Typography>
                                                 <Typography variant="subtitle1" component="div" sx={{ padding: '10px 0' }}>

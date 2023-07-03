@@ -5,6 +5,7 @@ import { Button, Grid } from '@mui/material';
 import ActionButton from '../../components/ActionButton/ActionButton';
 import DownloadResumeButton from '../../components/DownloadResumeButton/DownloadResumeButton';
 import Projects from '../../pages/Home/Projects/Projects';
+import Connect from '../../pages/Home/Connect/Connect';
 
 
 const Main = () => {
@@ -31,8 +32,12 @@ const Main = () => {
                     <DownloadResumeButton/>
                     
                 </Grid>
-                <Grid item style={{width:'85%'}} spacing={3}>
+                <Grid item style={{width:'85%'}}>
                     <Projects/>
+                </Grid>
+                <Grid>
+                    <Connect/>
+
                 </Grid>
 
 
