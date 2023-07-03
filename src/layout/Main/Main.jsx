@@ -7,17 +7,18 @@ import DownloadResumeButton from '../../components/DownloadResumeButton/Download
 import Projects from '../../pages/Home/Projects/Projects';
 import Connect from '../../pages/Home/Connect/Connect';
 import Skills from '../../pages/Home/Skills/Skills';
+import { Slide, Zoom } from 'react-awesome-reveal';
 
 
 const Main = () => {
-    const navBarLinks = ["Skills", "Portfolio","Connect","Resume"]
-    
-    
-    
+    const navBarLinks = ["Skills", "Portfolio", "Connect", "Resume"]
+
+
+
     return (
         <div style={{ backgroundColor: '#121212' }}>
-           <NavBar links={navBarLinks}></NavBar>
-           <Grid
+            <NavBar links={navBarLinks}></NavBar>
+            <Grid
                 container
                 direction="column"
                 justifyContent="center"
@@ -25,29 +26,37 @@ const Main = () => {
                 style={{ minHeight: '80vh' }}
                 spacing={5}
             >
-                <Grid item style={{marginTop:'20%'}}>
-                    <Intro />
+                <Grid item style={{ marginTop: '20%' }}>
+                    <Slide direction='down' duration={500}>
+                        <Intro />
+                    </Slide>
 
                 </Grid>
                 <Grid item>
-                    <DownloadResumeButton/>
-                    
-                </Grid>
-                <Grid item style={{width:'90%'}}>
-                    <Skills id='section1'/>
+                    <DownloadResumeButton />
 
                 </Grid>
-                <Grid item style={{width:'85%'}}>
-                    <Projects  id='section2'/>
+                <Grid item style={{ width: '90%' }}>
+                    <Slide direction='up' duration={500}>
+                        <Skills id='section1' />
+                    </Slide>
+
+                </Grid>
+                <Grid item style={{ width: '85%' }}>
+                    <Zoom direction='down' duration={850}>
+                        <Projects id='section2' />
+                    </Zoom>
                 </Grid>
                 <Grid>
-                    <Connect  id='section3'/>
+                    <Zoom direction='down' duration={850}>
+                        <Connect id='section3' />
+                    </Zoom>
 
                 </Grid>
 
 
             </Grid>
-           
+
         </div>
     );
 };
