@@ -31,7 +31,7 @@ const Main = () => {
                     <DownloadResumeButton/>
                     
                 </Grid>
-                <Grid item style={{width:'80%'}} spacing={3}>
+                <Grid item style={{width:'85%'}} spacing={3}>
                     <Projects/>
                 </Grid>
 
