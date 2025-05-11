@@ -29,10 +29,9 @@ const Intro = ({id}) => {
                     I'm an MSc Computer Science & Engineering student specializing in Data Analysis, Machine Learning, and Full-Stack Web Development (MERN). My toolkit includes Python with its scientific ecosystem for data analysis and model development, SQL for data querying and manipulation, and the MERN stack for building full-stack web applications. I enjoy extracting actionable insights from data through analysis and model fine-tuning, and also build interactive, user-focused web platforms. I'm eager to apply this dual skill set to develop both analytical and application-driven solutions.
                 <br />
                     <IconButton sx={{color:'white'}}>
-                        <Link><FiLinkedin style={socialLinkStyle} /></Link>
-                        <FiGithub style={socialLinkStyle} />
-                        <FiMail style={socialLinkStyle} />
-
+                        <a href='https://www.linkedin.com/in/marzuka-zaki/' target='_blank' rel="noopener noreferrer"><FiLinkedin style={socialLinkStyle} /></a>
+                        <a href='https://github.com/MarzukaaZaki' target='_blank' rel="noopener noreferrer"> <FiGithub style={socialLinkStyle} /></a>
+                        <a href='mailto:marzukaabeeda09@gmail.com' target='_blank' rel="noopener noreferrer"><FiMail style={socialLinkStyle} /></a>
                     </IconButton>
 
                 </Typography>

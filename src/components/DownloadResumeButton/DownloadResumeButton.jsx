@@ -5,7 +5,7 @@ import ActionButton from '../ActionButton/ActionButton';
 
 const DownloadResumeButton = () => {
   const handleDownload = () => {
-    fetch('/Resume of Marzuka Zaki Abeeda.pdf')
+    fetch('/CV_of_Marzuka_Zaki_Abeeda.pdf')
       .then(response => response.blob())
       .then(blob => {
         // Create a temporary URL for the downloaded file
@@ -14,7 +14,7 @@ const DownloadResumeButton = () => {
         // Create an anchor element to initiate the download
         const anchorElement = document.createElement('a');
         anchorElement.href = url;
-        anchorElement.download = 'Resume of Marzuka Zaki Abeeda.pdf';
+        anchorElement.download = 'CV_of_Marzuka_Zaki_Abeeda.pdf';
 
         // Trigger a click event on the anchor element to initiate the download
         anchorElement.click();
@@ -23,12 +23,12 @@ const DownloadResumeButton = () => {
         URL.revokeObjectURL(url);
       })
       .catch(error => {
-        console.log('Error downloading resume:', error);
+        console.log('Error downloading CV:', error);
       });
   };
 
   return (
-    <ActionButton onClick={handleDownload}>Download Resume</ActionButton>
+    <ActionButton onClick={handleDownload}>Download CV</ActionButton>
     
   );
 };
