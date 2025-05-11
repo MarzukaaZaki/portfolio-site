@@ -25,7 +25,8 @@ const Intro = ({id}) => {
         <div id={id} className='flex-col items-center justify-center text-center'>
             <ThemeProvider theme={theme}>
                 <Typography variant='h2' color='white' sx={{ marginBottom: '30px', fontWeight: 'bold', letterSpacing: '2' }}>Hello, I'm Marzuka</Typography>
-                <Typography color='white' sx={{ fontFamily: 'Open Sans', margin: '4px 20%', }}>I'm a Computer Science student in my final year of university. I am skilled in web development, especially, in front-end development. I specialize in using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. I'm constantly seeking opportunities to expand my knowledge and stay up-to-date with the latest trends and technologies in the web development world. I'm excited to take on new challenges and contribute my skills to innovative projects.
+                <Typography color='white' sx={{ fontFamily: 'Open Sans', margin: '4px 20%', }}>
+                    I'm an MSc Computer Science & Engineering student specializing in Data Analysis, Machine Learning, and Full-Stack Web Development (MERN). My toolkit includes Python with its scientific ecosystem for data analysis and model development, SQL for data querying and manipulation, and the MERN stack for building full-stack web applications. I enjoy extracting actionable insights from data through analysis and model fine-tuning, and also build interactive, user-focused web platforms. I'm eager to apply this dual skill set to develop both analytical and application-driven solutions.
                 <br />
                     <IconButton sx={{color:'white'}}>
                         <Link><FiLinkedin style={socialLinkStyle} /></Link>

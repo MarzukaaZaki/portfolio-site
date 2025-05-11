@@ -9,6 +9,7 @@ import tailwindIcon from '../../../assets/tailwindcss.png'
 import expressIcon from '../../../assets/express.png'
 import { Link, useLoaderData } from 'react-router-dom';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import { Slide } from 'react-awesome-reveal';
 
 
 const Projects = ({id}) => {
@@ -46,6 +47,7 @@ const Projects = ({id}) => {
             {
                 isMatch ?
                     <>
+                    <Slide direction='left'>
                         {
                             projects.map(project => <Grid item xs={12}>
                                 <Card sx={{ maxWidth: 345, padding: '9px 7px', borderRadius: '6px', backgroundColor: '#231f24', color: '#FFF4E0' }}>
@@ -90,7 +92,7 @@ const Projects = ({id}) => {
 
                             </Grid>)
                         }
-
+                </Slide>
                     </>
 
                     :
@@ -148,7 +150,7 @@ const Projects = ({id}) => {
                                                     </IconButton>
 
                                                 </Box>
-                                                <Button variant='contained' sx={{ margin: '10px 0', padding: '8px 17px' }}>Learn More</Button>
+                                                {/* <Button variant='contained' sx={{ margin: '10px 0', padding: '8px 17px' }}>Learn More</Button> */}
                                             </CardContent>
 
                                         </Box>

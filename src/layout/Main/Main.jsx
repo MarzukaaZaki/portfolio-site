@@ -13,9 +13,10 @@ import { Slide, Zoom } from 'react-awesome-reveal';
 const Main = () => {
     const navBarLinks = ["About","Skills", "Portfolio", "Connect"]
 
-
+// define theme
 
     return (
+        // enclose everything within themeprovider
         <div style={{ backgroundColor: '#121212' }}>
             <NavBar links={navBarLinks}></NavBar>
             <Grid
@@ -27,7 +28,7 @@ const Main = () => {
                 spacing={5}
             >
                 <Grid item style={{ marginTop: '20%' }}>
-                    <Slide direction='down' duration={500}>
+                    <Slide direction='down' duration={300}>
                         <Intro id='section1'/>
                     </Slide>
 
@@ -37,20 +38,19 @@ const Main = () => {
 
                 </Grid>
                 <Grid item style={{ width: '90%' }}>
-                    <Slide direction='up' duration={500}>
+                    <Slide direction='down' duration={600} initialSlide='0'>
                         <Skills id='section2' />
                     </Slide>
 
                 </Grid>
                 <Grid item style={{ width: '85%' }}>
-                    <Zoom direction='down' duration={850}>
                         <Projects id='section3' />
-                    </Zoom>
+                    
                 </Grid>
                 <Grid>
-                    <Zoom direction='down' duration={850}>
+                    <Slide direction='down' duration={30}>
                         <Connect id='section4' />
-                    </Zoom>
+                    </Slide>
 
                 </Grid>
 
