@@ -60,7 +60,7 @@ const NavBar = ({ links }) => {
 
                                       <Grid xs={2}>
                                         <Box className='mt-1 -ml-10'>
-                                            <Button sx={{color:'#F5F5F5', fontSize:'13px'}}><a href="https://drive.google.com/file/d/1PYzj4fIpSth1z6K2B4awjqAKe30TRuI0/view?usp=drive_link" target='_blank'>Resume</a></Button>
+                                            <Button sx={{color:'#F5F5F5', fontSize:'13px'}}><a href="https://drive.google.com/file/d/1-3hN3E747XIXsjGMBl8VZotxGKzRB65-/view?usp=sharing" target='_blank'>View CV</a></Button>
                                         </Box>
                                       </Grid>
 
